@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <nav id="navbar-example2" class="navbar bg-light px-3 justify-content-between navbar-expand-sm">
+        <a class="navbar-brand" href="#">
+            <img src="images/katlogo.png" alt="Cat Logo" width="60" height="50" class="d-inline-block align-text-top img-fluid">
+        </a>
+        <p class="navbar-text mx-3 my-2 fs-5">Hier vind je een overzicht terug!</p>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="index.html">
+                    <button type="button" class="btn btn-secondary me-2 btn-lm">Home</button>
+                  </a>
+         </li>
+            <li class="nav-item">
+                <div class="btn-group">
+                    <button class="btn btn-secondary dropdown-toggle me-2 btn-lm" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Overzicht
+                    </button>
+                    <ul class="dropdown-menu" style="">
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="overzicht.html">Bekijk alles</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="rassen.html">Rassen</a></li>
+                        <li><a class="dropdown-item" href="kattenproducten.html">kattenproducten</a></li>
+                        <li><a class="dropdown-item" href="opvoeding.html">Opvoeding & gedrag</a></li>
+                        <li><a class="dropdown-item" href="verzorging.html">Verzorging</a></li>
+                        <li><a class="dropdown-item" href="keuzevoorkat.html">Waarom een kat?</a></li>
+                        <li><a class="dropdown-item" href="baasje.html">Ben jij het ideale baasje?</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html">
+                    <button type="button" class="btn btn-secondary me-2 btn-lm">Contact</button>
+                </a>
+            </li>
+        </ul>
+        
+        <!-- Zoekbalk en zoekpictogram -->
+<div class="d-flex flex-wrap">
+    <input type="text" class="form-control search-input me-2 form-control-sm" placeholder="Waar bent u naar op zoek?" aria-label="Search">
+    <button type="button" class="btn btn-orange">
+        <i class="bi bi-search"></i>
+    </button>
+</div>
+
+    </nav>
+    
+</body>
+</html>
