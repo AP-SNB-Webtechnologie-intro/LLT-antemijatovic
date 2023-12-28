@@ -63,6 +63,111 @@
 </div>
 
     </nav>
+    <div class="containerslides mt-4">
+        <div class="w3-content w3-display-container">
+        <img class="mySlides" src="images/banner.jpg" style="width:75%">
+        <img class="mySlides" src="images/banner2.jpg" style="width:75%">
+        <img class="mySlides" src="images/banner3.jpg" style="width:75%">
+        <!-- De vierde lege slide is verwijderd -->
+      
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+</div>
+
+
+<<div class="container mt-4">
+    <div class="card mx-md-auto">
+        <div class="row g-0 my-2 align-items-center">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">Uitleg onderwerp</h5>
+                    <p class="card-text">
+                        De keuze voor een website over katten komt voort uit mijn liefde voor deze prachtige dieren.
+                        Katten hebben unieke persoonlijkheden en fascinerend gedrag.
+                        Op deze website deel ik informatie over verschillende kattenrassen, verzorgingstips en inzichten in hun gedrag.
+                        Of je nu een ervaren katteneigenaar bent of overweegt een kat in huis te nemen, hier vind je waardevolle informatie 
+                        en schattige kattencontent. Welkom in de wereld van kattenliefhebbers! 🐾
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 ms-md-auto">
+                <img src="images/ante.jpg" class="img-fluid rounded-circle" width="150">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-light text-center text-lg-start mt-4">
+    <div class="container-fluid p-4">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Informatie</h5>
+                <p>
+                   Dit is een online platform voor kattenliefhebbers. 
+                   Hierop vind je alle informatie over katten en kittens: op het gebied van gezondheid, beweging, opvoeding, keuzes, gedrag 
+                   en rassen. Zo heb je alle tips en tricks op één plek en kun je katten en kittens een leuk en comfortabel leven geven!
+                </p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Op deze website</h5>
+                <ul class="list-unstyled">
+                    <li><a href="overzicht.html" class="text-dark text-decoration-underline">Bekijk alles</a></li>
+                    <li><a href="rassen.html" class="text-dark text-decoration-underline">Rassen</a></li>
+                    <li><a href="kattenproducten.html" class="text-dark text-decoration-underline">Kattenproducten</a></li>
+                    <li><a href="opvoeding.html" class="text-dark text-decoration-underline">Opvoeding & Gedrag</a></li>
+                    <li><a href="verzorging.html" class="text-dark text-decoration-underline">Verzorging</a></li>
+                    <li><a href="keuzevoorkat.html" class="text-dark text-decoration-underline">Waarom een kat?</a></li>
+                    <li><a href="baasje.html" class="text-dark text-decoration-underline">Ben jij het ideale baasje?</a></li>
+                </ul>
+            </div>
+            
+
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Contactgegevens</h5>
+                <address>
+                    Website Ante Mijatovic<br>
+                    Hanendreef 112<br>
+                    2930 Brasschaat<br>
+                    België
+                </address>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 Ante Mijatovic
+    </div>
+</footer>
+
+
+
+
+
+          
+
+        <!-- Script voor sliden -->
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+    
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+    
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+    
     
 </body>
 </html>

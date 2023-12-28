@@ -8,6 +8,7 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
 a, a:hover {
   text-decoration: none;
   color: #ca8446;
@@ -16,7 +17,7 @@ a, a:hover {
 .btn.btn-secondary:hover {
   background-color: orange;
   border-color: orange;
-  color: #fff; /* Verander dit als je de tekstkleur wilt aanpassen */
+  color: #fff;
 }
 
 .btn-orange {
@@ -24,9 +25,37 @@ a, a:hover {
   border-color: orange;
   color: #fff;
 }
+
 .form-control.search-input {
-  width: 450px; 
-  height: 50px; 
+  width: 450px;
+  height: 50px;
 }
 
+.mySlides {
+  display: none;
+}
 
+.w3-content {
+  max-width: 150%; /* Aangepaste breedte voor de diavoorstelling */
+  margin: 0 auto; /* Hiermee wordt de diavoorstelling in het midden van de pagina geplaatst */
+  position: relative;
+}
+
+.w3-display-left,
+.w3-display-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.w3-display-left {
+  left: 0;
+}
+
+.w3-display-right {
+  right: 25%; /* Pas deze waarde aan om de knop naar links te verschuiven */
+}
+
+.containerslides {
+  margin-left: 20%;
+}
