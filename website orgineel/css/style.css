@@ -82,3 +82,12 @@ a, a:hover {
   margin: 0; 
 }
 
+#map {
+  height: 400px;
+  width: 80%; 
+  margin: 0 auto; 
+  border: 2px solid #000000; /* Voeg een border toe */
+  border-radius: 10px; /* Maak de hoeken rond */
+  overflow: hidden; 
+}
+
