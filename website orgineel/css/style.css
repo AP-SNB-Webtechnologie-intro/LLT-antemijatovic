@@ -36,8 +36,8 @@ a, a:hover {
 }
 
 .w3-content {
-  max-width: 150%; /* Aangepaste breedte voor de diavoorstelling */
-  margin: 0 auto; /* Hiermee wordt de diavoorstelling in het midden van de pagina geplaatst */
+  max-width: 150%; 
+  margin: 0 auto; 
   position: relative;
 }
 
@@ -49,13 +49,31 @@ a, a:hover {
 }
 
 .w3-display-left {
-  left: 0;
+  left: 5%;
 }
 
 .w3-display-right {
-  right: 25%; /* Pas deze waarde aan om de knop naar links te verschuiven */
+  right: 5%; 
 }
 
 .containerslides {
   margin-left: 20%;
+}
+
+.card {
+  transition: transform 0.2s ease-in-out;
+  margin-bottom: 20px; 
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.custom-slide-width {
+  width: 90%; 
+  margin: 0 auto; 
+}
+.containerslides {
+  margin: 0; 
 }
