@@ -60,11 +60,61 @@
         <i class="bi bi-search"></i>
     </button>
 </div>
-
-    </nav>
-
+</nav>
 
 
+
+<div class="container mt-4">
+    <div class="row mb-4">
+        <!-- Contactformulier voor de 'admin' -->
+        <div class="col-md-6 mb-4">
+            <div class="border border-dark p-3"> 
+                <h3 class="mb-3">Admin Contactformulier</h3>
+                <form action="mailto:antemijatovic2005@gmail.com" method="post" enctype="text/plain">
+                    <div class="mb-3">
+                        <label for="admin_name" class="form-label">Naam:</label>
+                        <input type="text" id="admin_name" name="admin_name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="admin_email" class="form-label">E-mail:</label>
+                        <input type="email" id="admin_email" name="admin_email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="admin_message" class="form-label">Bericht:</label>
+                        <textarea id="admin_message" name="admin_message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-orange">Verstuur</button> 
+                </form>
+            </div>
+        </div>
+
+        <!-- Contactformulier voor de 'webdesigner' -->
+        <div class="col-md-6 mb-4">
+            <div class="border border-dark p-3"> 
+                <h3 class="mb-3">Webdesigner Contactformulier</h3>
+                <form action="mailto:webdesigner@gmail.com" method="post" enctype="text/plain">
+                    <div class="mb-3">
+                        <label for="webdesigner_name" class="form-label">Naam:</label>
+                        <input type="text" id="webdesigner_name" name="webdesigner_name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="webdesigner_email" class="form-label">E-mail:</label>
+                        <input type="email" id="webdesigner_email" name="webdesigner_email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="webdesigner_message" class="form-label">Bericht:</label>
+                        <textarea id="webdesigner_message" name="webdesigner_message" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-orange">Verstuur</button> 
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer -->
     <footer class="bg-light text-center text-lg-start mt-4">
         <div class="container-fluid p-4">
             <div class="row">

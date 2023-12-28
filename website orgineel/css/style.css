@@ -26,6 +26,10 @@ a, a:hover {
   color: #fff;
 }
 
+.btn-orange:hover {
+  background-color: #cc7a00; 
+}
+
 .form-control.search-input {
   width: 450px;
   height: 50px;
@@ -77,3 +81,4 @@ a, a:hover {
 .containerslides {
   margin: 0; 
 }
+
