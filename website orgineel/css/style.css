@@ -124,3 +124,7 @@ tbody tr:nth-child(even) {
 tbody tr:nth-child(odd) {
   background-color: #ffffff;
 }
+
+button.btn-secondary.position-absolute.start-0.m-3 {
+  top: 60px; 
+}
