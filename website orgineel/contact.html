@@ -168,7 +168,13 @@
     
         L.marker([51.2989, 4.4916]).addTo(map)
             .bindPopup('Brasschaat, België'); 
-    
+    // Voeg cirkel toe rond marker
+    var circle = L.circle([51.2989, 4.4916], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 200 // Stel de gewenste straal in meters in
+        }).addTo(map);
     </script>
 </body>
 </html>
