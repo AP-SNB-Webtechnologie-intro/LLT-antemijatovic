@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./css/style.css">
      <!-- Lightbox2 CSS -->
      <link rel="stylesheet" href="path/to/lightbox2/dist/css/lightbox.min.css">
+     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
 
@@ -110,7 +112,7 @@
     
     <!-- Semantische Tabel -->
     <table class="table table-bordered mt-3">
-        <caption>Informatie over kattenrassen</caption>
+        <caption>Informatie over kattenrassen. Klik op het land van oorsprong om dit op onderstaande kaart te bekijken.</caption>
         <thead>
             <tr>
                 <th scope="col">Ras</th>
@@ -119,37 +121,37 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
+            <tr data-position="[32, 54]">
                 <td>Perzische kat</td>
                 <td>Iran</td>
                 <td>Gemiddeld</td>
             </tr>
-            <tr>
+            <tr data-position="[15, 100]">
                 <td>Siamese kat</td>
                 <td>Thailand</td>
                 <td>Klein</td>
             </tr>
-            <tr>
+            <tr data-position="[39, -98]">
                 <td>Maine Coon</td>
                 <td>Verenigde Staten</td>
                 <td>Groot</td>
             </tr>
-            <tr>
+            <tr data-position="[24, 90]">
                 <td>Bengaalse kat</td>
                 <td>Bengalen</td>
                 <td>Middelgroot</td>
             </tr>
-            <tr>
+            <tr data-position="[56, -106]">
                 <td>Sphynx</td>
                 <td>Canada</td>
                 <td>Klein tot middelgroot</td>
             </tr>
-            <tr>
+            <tr data-position="[60, 100]">
                 <td>Russisch Blauw</td>
                 <td>Rusland</td>
                 <td>Middelgroot</td>
             </tr>
-            <tr>
+            <tr data-position="[9, 40]">
                 <td>Abyssinian</td>
                 <td>Ethiopië</td>
                 <td>Klein tot middelgroot</td>
@@ -157,6 +159,7 @@
         </tbody>
     </table>
 </div>    
+<div id="map" style="height: 300px;"></div>
 
     <footer class="bg-light text-center text-lg-start mt-4">
         <div class="container-fluid p-4">
@@ -200,8 +203,26 @@
         </div>
     </footer> 
     
-      <!-- Lightbox2 JavaScript -->
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="path/to/lightbox2/dist/js/lightbox.min.js"></script>  
+      <script>
+        var map = L.map('map').setView([20, 0], 2); 
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        document.querySelectorAll('tr[data-position]').forEach(function(row) {
+            var position = JSON.parse(row.getAttribute('data-position'));
+            var name = row.childNodes[3].textContent;
+
+            var marker = L.marker(position).addTo(map).bindPopup(name);
+
+            row.addEventListener('click', function() {
+                map.setView(position, 6);
+                marker.openPopup();
+            });
+        });
+    </script>
 </body>
 </html>
